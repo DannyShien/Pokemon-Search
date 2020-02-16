@@ -7,3 +7,4 @@ The user is able to type the name of the first 151 original pokemon into the for
 A simple application primarily focusing on working with forms. The input form is able to reset the state to its initial value(state: '') after each submittion, allowing user to do multiple search queries. 
 
 ##Screenshots
+![](images/Search%20Bar.png)
