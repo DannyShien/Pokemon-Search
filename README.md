@@ -8,3 +8,6 @@ A simple application primarily focusing on working with forms. The input form is
 
 ##Screenshots
 ![](images/Search%20Bar.png)
+![](images/Bulbasaur.png)
+![](images/Squirtle.png)
+![](images/Charmander.png)
