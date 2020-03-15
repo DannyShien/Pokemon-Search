@@ -1,4 +1,4 @@
-import React from 'react'; 
+import React from './node_modules/react'; 
 import './PokemonCard.css';
 
 const PokemonCard = ({pokemonInfo, pokemonName, pokemonSprite, pokemonTypes}) => {
