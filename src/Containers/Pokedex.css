@@ -1,4 +1,18 @@
+.pokedex {
+    display: flex; 
+    flex-direction: column;
+    align-items: center; 
+    width: inherit;
+    height: 50%;
+}
+.search-container {
+    display: flex; 
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
 .pokemon-card {
     display: flex;
     justify-content: center;
+    height: 100%;
 }

@@ -1,6 +1,6 @@
 import React from 'react';
 import './App.css';
-import Pokedex from './components/Pokedex';
+import Pokedex from './Containers/Pokedex';
 
 function App() {
   return (

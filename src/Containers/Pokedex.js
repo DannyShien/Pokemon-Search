@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './Pokedex.css' 
 import Search from './Search';
-import PokemonCard from '../Components/PokemonCard';
+import PokemonCard from '../Components/PokemonCard/PokemonCard';
 
 
 class Pokedex extends Component {
@@ -57,7 +57,7 @@ class Pokedex extends Component {
 
     render() {
         return (
-            <>
+            <div className='pokedex'>
                 <div className='search-container'>
                    <Search fetch={this.searchPokemonData} />
                 </div>
@@ -71,7 +71,7 @@ class Pokedex extends Component {
                         />
                     : null}
                 </div>
-            </>
+            </div>
         );
     }
 }
