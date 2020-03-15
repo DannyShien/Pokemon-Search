@@ -1,13 +1,11 @@
 import React from 'react';
+import './Button.css'
 
 const Button = ({text, style, type}) => {
     return (
-        <input 
-            className='button' 
-            style={style} 
-            type={type}
-            text={text}
-        />
+        <button className='button' style={style} type={type}>
+            {text}
+        </button>
     ) 
 };
 
