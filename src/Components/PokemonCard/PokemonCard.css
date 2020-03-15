@@ -1,0 +1,23 @@
+.card-detail {
+    display: flex;
+    align-items: center;
+    border-style: double;
+    /* width: 25%; */
+    /* background-color: blanchedalmond; */
+}
+.card-detail :first-child {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    height: 100%;
+}
+.card-detail :first-child p {
+    font-size: 70%;
+    margin: 0;
+}
+.card-detail :first-child h5 {
+    margin: 0;
+    font-size: 80%
+}

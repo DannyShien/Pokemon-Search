@@ -1,5 +1,6 @@
-import React, { Component} from 'react'; 
+import React, { Component} from 'react';
 import './Search.css';
+import Button from '../Button/Button';
 
 class Search extends Component {
     constructor(props) {
@@ -19,7 +20,6 @@ class Search extends Component {
     handleSubmit = (event) => {
         event.preventDefault()
         this.props.fetch(this.query.value)
-        // console.log(event.target.value)
         this.reset()
     }
     reset = () => {
@@ -30,17 +30,23 @@ class Search extends Component {
 
     render() {
         return (
-            <form className='form-container' onSubmit={this.handleSubmit}>
+            <form className='form' onSubmit={this.handleSubmit}>
                 <label className='search-label'>
                     <input 
-                         type='text'
-                         name='search'
-                         placeholder='ie. pikachu'
-                         value={this.state.search}
-                         ref={(input) => this.query = input}
-                         onChange={this.handleInputChange}
-                         />
-                    <input type='submit' />
+                        type='text'
+                        name='search'
+                        placeholder='ie. pikachu'
+                        value={this.state.search}
+                        ref={(input) => this.query = input}
+                        onChange={this.handleInputChange}
+                    />
+                    <Button 
+                        type='submit' 
+                        text='Submit' 
+                        style={{
+                            fontSize: '100%'
+                        }}
+                    />
                 </label>
             </form>
         ) 
