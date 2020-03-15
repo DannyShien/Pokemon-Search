@@ -1,6 +1,6 @@
 import React, { Component} from 'react';
 import './Search.css';
-import Button from '../Components/Button/Button'
+import Button from '../Button/Button';
 
 class Search extends Component {
     constructor(props) {
@@ -40,8 +40,13 @@ class Search extends Component {
                         ref={(input) => this.query = input}
                         onChange={this.handleInputChange}
                     />
-                    {/* <input type='submit' /> */}
-                    <Button type='submit' text='Submit' />
+                    <Button 
+                        type='submit' 
+                        text='Submit' 
+                        style={{
+                            fontSize: '100%'
+                        }}
+                    />
                 </label>
             </form>
         ) 

@@ -1,15 +1,21 @@
 import React from 'react'; 
 import './PokemonCard.css';
+import Image from '../Image/Image';
 
 const PokemonCard = ({pokemonInfo, pokemonName, pokemonSprite, pokemonTypes}) => {
         return ( 
             <div className='card-detail'>
                 <div>
-                    <img src={pokemonSprite} alt={pokemonName} />
+                    <Image 
+                        src={pokemonSprite} 
+                        alt={pokemonName}
+                        style={{
+                            height: '75%',
+                            width: 'auto'
+                        }}   
+                    />
                     <p>{`No. ${pokemonInfo.id}`}</p>
-                </div>
-                <div>
-                    <h4>{pokemonName}</h4>
+                    <h5>{pokemonName}</h5>
                     <p>{pokemonTypes}</p>
                 </div>
             </div>
