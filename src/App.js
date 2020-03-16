@@ -6,12 +6,14 @@ import './App.css';
 import Pokedex from './Containers/Pokedex/Pokedex';
 
 function App() {
-  return (
-    <div className="App">
-      <h1>Pokemon: Data Search</h1>
-      <Pokedex />
-    </div>
-  );
+    return (
+        <Router>
+            <div className="App">
+                <h1>Pokemon: Data Search</h1>
+                <Route exact path='/' component={Pokedex} />
+            </div>
+        </Router>
+    );
 }
 
 export default App;

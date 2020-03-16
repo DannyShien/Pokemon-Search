@@ -1,4 +1,7 @@
 import React, { Component } from 'react';
+import { BrowserRouter as Router, 
+    Route
+} from 'react-router-dom';
 import './Pokedex.css' 
 import Search from '../../Components/Search/Search';
 import PokemonCard from '../../Components/PokemonCard/PokemonCard';
