@@ -32,7 +32,7 @@ class Pokedex extends Component {
 
     renderPokemonData = () => {
         const { results } = this.state
-        
+        console.log(`this.state. :`, results)
         let pokemonName = results.name
         let pokemonId = results.id
         let pokemonSprite = results.sprites.front_default
@@ -48,6 +48,7 @@ class Pokedex extends Component {
         })
 
         this.setState({
+            results,
             name: pokemonName,
             id: pokemonId,
             sprite: pokemonSprite,
@@ -56,6 +57,10 @@ class Pokedex extends Component {
     }
 
     render() {
+        const { results } = this.state
+        const array = []
+        
+        console.log(`this.state. `, results)
         return (
             <div className='pokedex'>
                 <div className='search-container'>
