@@ -19,7 +19,7 @@ class Search extends Component {
 
     handleSubmit = (event) => {
         event.preventDefault()
-        this.props.fetch(this.query.value)
+        this.props.fetch(this.state.search)
         this.reset()
     }
     reset = () => {
@@ -37,7 +37,6 @@ class Search extends Component {
                         name='search'
                         placeholder='ie. pikachu'
                         value={this.state.search}
-                        ref={(input) => this.query = input}
                         onChange={this.handleInputChange}
                     />
                     <Button 

@@ -57,10 +57,6 @@ class Pokedex extends Component {
     }
 
     render() {
-        const { results } = this.state
-        const array = []
-        
-        console.log(`this.state. `, results)
         return (
             <div className='pokedex'>
                 <div className='search-container'>
